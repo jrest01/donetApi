@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "sZ0mZSKuywCrn9uamWq4MQqMMX9jFRc+l7v0R+XBy3htJ6M4FPLTJ5VOvoeNde4d2O20vOTJ2bgNt3mRBng2pg==",
+  "success": true,
+  "projectFilePath": "D:\\Platzi_Courses\\NetAPI\\NetAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\julia\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
