@@ -30,3 +30,4 @@ D:\Platzi_Courses\NetAPI\obj\Debug\net8.0\refint\NetAPI.dll
 D:\Platzi_Courses\NetAPI\obj\Debug\net8.0\NetAPI.pdb
 D:\Platzi_Courses\NetAPI\obj\Debug\net8.0\NetAPI.genruntimeconfig.cache
 D:\Platzi_Courses\NetAPI\obj\Debug\net8.0\ref\NetAPI.dll
+D:\Platzi_Courses\NetAPI\obj\Debug\net8.0\NetAPI.sourcelink.json
