@@ -19,7 +19,11 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+// init customs middlewares
+// app.UseWelcomePage();
 
+app.UseTimeMiddleware();
+// end customs middlewares
 app.MapControllers();
 
 app.Run();
