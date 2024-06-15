@@ -34,6 +34,7 @@ namespace NetAPI.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogInformation("API returns the list of Weather Forecast");
             return ListWeatherForecast;
         }
 
@@ -42,6 +43,7 @@ namespace NetAPI.Controllers
         [Route("[action]")]
         public IEnumerable<WeatherForecast> Get(int id)
         {
+            _logger.LogDebug("API returns the list of Weather Forecast");
             return ListWeatherForecast;
         }
 
