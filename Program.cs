@@ -7,6 +7,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Dependency Injection
+// f1
+// builder.Services.AddScoped<IHelloWorldService, HelloWorldService>();
+// f2
+builder.Services.AddScoped<IHelloWorldService>(p => new HelloWorldService());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
