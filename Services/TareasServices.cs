@@ -35,7 +35,7 @@ public class TareaServices : ITareaServices
 
     public async Task Delete(Guid id)
     {
-        Tarea tarea = context.Tareas.Find(id);
+        var tarea = context.Tareas.Find(id);
         if (tarea == null)
         {
             throw new Exception("Id not found");

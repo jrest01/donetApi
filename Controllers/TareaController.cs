@@ -1,43 +1,48 @@
 using Microsoft.AspNetCore.Mvc;
 using webapi.Models;
 
-
-[ApiController]
-[Route("api/controller")]
-public class TareaController : ControllerBase
+namespace NetAPI.Controllers
 {
-    private readonly ITareaServices _tareasServices;
-
-    public TareaController(ITareaServices services)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class TareaController : ControllerBase
     {
-        _tareasServices = services;
-    }
+        ITareaServices _tareasServices;
 
-    [HttpGet]
-    public IActionResult Get()
-    {
-        return Ok(_tareasServices.Get());
-    }
+        public TareaController(ITareaServices service)
+        {
+            _tareasServices = service;
+        }
 
-    [HttpPost]
-    public IActionResult Post([FromBody] Tarea tarea)
-    {
-        _tareasServices.Save(tarea);
-        return Ok();
-    }
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok(_tareasServices.Get());
+        }
 
-    [HttpPut("{id}")]
-    public IActionResult Put(Guid id, [FromBody] Tarea tarea)
-    {
-        _tareasServices.Update(id, tarea);
-        return Ok();
-    }
+        [HttpPost]
+        public IActionResult Post([FromBody] Tarea tarea)
+        {
+            _tareasServices.Save(tarea);
+            return Ok();
+        }
 
-    [HttpDelete("{id}")]
-    public IActionResult Delete(Guid id)
-    {
-        _tareasServices.Delete(id);
-        return Ok();
-    }
+        [HttpPut]
+        [Route("{id}")]
+        public IActionResult Put(Guid id, [FromBody] Tarea tarea)
+        {
+            _tareasServices.Update(id, tarea);
+            return Ok();
+        }
 
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id)
+        {
+            _tareasServices.Delete(id);
+            return Ok();
+        }
+
+
+    }
 }
+
