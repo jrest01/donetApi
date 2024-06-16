@@ -1,11 +1,11 @@
 using webapi;
 using webapi.Models;
 
-public class TareasServices : ITareasServices
+public class TareaServices : ITareaServices
 {
     TareasContext context;
 
-    public TareasServices(TareasContext dbContext)
+    public TareaServices(TareasContext dbContext)
     {
         context = dbContext;
     }
@@ -45,8 +45,9 @@ public class TareasServices : ITareasServices
     }
 
 }
-interface ITareasServices
+public interface ITareaServices
 {
+    IEnumerable<Tarea> Get();
     Task Save(Tarea tarea);
     Task Update(Guid id, Tarea newTarea);
     Task Delete(Guid id);

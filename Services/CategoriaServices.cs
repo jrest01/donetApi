@@ -48,6 +48,7 @@ public class CategoriaServices : ICategoriaServices
 
 public interface ICategoriaServices
 {
+    IEnumerable<Categoria> Get();
     Task Save(Categoria categoria);
     Task Update(Guid id, Categoria categoria);
     Task Delete(Guid id);

@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 // f2
 builder.Services.AddScoped<IHelloWorldService>(p => new HelloWorldService());
 builder.Services.AddScoped<ICategoriaServices, CategoriaServices>();
-builder.Services.AddScoped<ITareasServices, TareasServices>();
+builder.Services.AddScoped<ITareaServices, TareaServices>();
 
 var app = builder.Build();
 
